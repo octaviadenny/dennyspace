@@ -1,51 +1,51 @@
 const copy = {
   id: {
-    nav: { work: 'Keahlian', experience: 'Perjalanan', connect: 'Terhubung' },
-    heroEyebrow: 'Denny Musa Irawan',
-    hero: 'Menjadikan teknologi <span>lebih andal.</span>',
-    lede: 'Pemimpin IT Operations yang membangun fondasi aman dan siap tumbuh untuk bisnis yang bergerak cepat.',
-    primary: 'Mari terhubung', secondary: 'Lihat perjalanan',
+    nav: { work: 'Keahlian', experience: 'Inisiatif', connect: 'Kolaborasi' },
+    heroEyebrow: 'Portofolio profesional & agrowisata',
+    hero: '20+ Tahun di Dunia Teknologi.<br /><span>Kini Membangun Masa Depan Agrikultur.</span>',
+    lede: 'Mengintegrasikan pengalaman panjang dalam arsitektur sistem skala besar dan ekosistem startup digital untuk merevolusi budidaya durian premium Indonesia berbasis agritech.',
+    primary: 'Mari berdiskusi', secondary: 'Lihat inisiatif',
     aboutLabel: 'Tentang',
-    about: 'Operasi yang tenang.<br />Dampak yang besar.',
-    intro: 'Selama lebih dari dua dekade, saya menerjemahkan kompleksitas teknologi menjadi sistem, tim, dan pengalaman yang dapat diandalkan—dari kantor pusat hingga operasi lapangan di seluruh Indonesia.',
-    values: [['20+', 'tahun pengalaman lintas industri dan operasi TI.'], ['13.500+', 'tenaga kerja yang didukung di seluruh grup perusahaan.'], ['9', 'anak perusahaan yang dihubungkan oleh standar bersama.']],
-    workLabel: 'Fokus', work: 'Membuat skala terasa sederhana.',
+    about: 'Dari Baris Kode ke Tanah<br />Subur Nusantara.',
+    intro: 'Dua dekade dihabiskan untuk merancang arsitektur sistem informasi, memimpin tim engineering, dan menavigasi dinamika startup teknologi di Indonesia. Perjalanan ini melahirkan pemahaman mendalam tentang bagaimana teknologi harus memecahkan masalah nyata.<br /><br />Kini, fokus dialihkan ke sektor yang paling mendasar namun potensial: agrikultur. Melalui modernisasi pengelolaan perkebunan durian premium dan pengembangan startup agritech, misi utamanya adalah meningkatkan nilai tambah hasil bumi Indonesia hingga kelas dunia.',
+    values: [['20+', 'Tahun pengalaman startup & IT.'], ['3', 'Inisiatif bisnis berjalan saat ini.'], ['50+ Hektar', 'Luasan perkebunan durian terintegrasi.'], ['15+', 'Arsitektur sistem enterprise dirancang.']],
+    workLabel: 'Pilar kompetensi', work: 'Keahlian & penguasaan teknologi.',
     cases: [
-      ['Operasi yang selalu siap', 'Merancang layanan TI ujung ke ujung yang menjaga tim tetap produktif—setiap hari.'],
-      ['Keamanan & kepatuhan', 'Menyelaraskan praktik keamanan dengan kebutuhan bisnis dan regulasi Indonesia.'],
-      ['Fondasi untuk tumbuh', 'Membangun infrastruktur kantor, jaringan, dan warehouse dari awal hingga siap berkembang.']
+      ['System Integration', 'Menghubungkan sensor IoT lapangan, data meteorologi, dan sistem logistik gudang ke dalam satu dashboard analitik terpadu.'],
+      ['Startup Building & Scaling', 'Membangun model bisnis digital, merekrut tim engineering, dan mempersiapkan fondasi yang siap bertumbuh.'],
+      ['IT Infrastructure', 'Arsitektur cloud tangguh, edge-computing untuk area kebun minim sinyal, dan keamanan data supply chain hulu-ke-hilir.']
     ],
-    expLabel: 'Perjalanan', exp: 'Pengalaman yang dibangun dari lapangan.',
+    expLabel: 'Inisiatif bisnis utama', exp: 'Kolektif bisnis aktif.',
     roles: [
-      ['2021 — sekarang', 'Head of IT Operations', 'byOrange', 'Memimpin operasi TI dan dukungan end-to-end untuk grup holding dengan sembilan anak perusahaan di fintech, pembayaran digital, logistik, warehouse, dan BPO.', 'Jakarta'],
-      ['2019 — 2021', 'IT Support Manager', 'OVO (PT Visionet Internasional)', 'Memimpin layanan TI, IAM, infrastruktur, dan kesiapan operasional untuk ribuan karyawan dan perangkat.', 'Jakarta'],
-      ['2012 — 2019', 'IT Support & Operational Manager', 'PT Bilna · Orami & Berrybenka', 'Membangun dan menskalakan infrastruktur operasional untuk kantor pusat serta pusat fulfillment e-commerce.', 'Jakarta']
+      ['Duren Signature', 'Toko Durian Premium', 'E-commerce premium', 'Pusat distribusi durian kualitas terbaik hasil kurasi berbasis sensor kualitas.', 'Jawa Barat'],
+      ['Pratama Farms', 'Kebun Durian Modern', 'Agrowisata & perkebunan', 'Perkebunan durian modern dengan implementasi IoT otomatis untuk penyiraman, pemupukan, dan deteksi dini hama.', 'Jawa Barat'],
+      ['Tanisinergi', 'Startup AgriTech', 'Platform teknologi', 'Membangun platform supply chain digital yang menghubungkan perkebunan rakyat dengan pasar premium global.', 'Indonesia']
     ],
-    contactLabel: 'Mari berbicara', contact: 'Membangun hal yang<br />dapat diandalkan.', contactText: 'Terbuka untuk percakapan tentang operasi TI, infrastruktur, keamanan, dan bagaimana teknologi dapat membantu bisnis bertumbuh.', contactButton: 'Kunjungi LinkedIn', copyright: '© 2026 Dennyspace. Dibuat dengan perhatian pada setiap detail.'
+    contactLabel: 'Visi & filosofi', contact: '“Teknologi terbaik bukan teknologi yang paling rumit, tetapi yang paling berdampak langsung saat menyentuh akar kehidupan manusia.”', contactText: 'Terbuka untuk konsultasi system integrator, advisory dan mentoring startup, serta kemitraan kebun & agritech.', contactButton: 'Mari terhubung di LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
   },
   en: {
-    nav: { work: 'Focus', experience: 'Journey', connect: 'Connect' },
-    heroEyebrow: 'Denny Musa Irawan',
-    hero: 'Making technology <span>more dependable.</span>',
-    lede: 'An IT Operations leader building secure, scalable foundations for businesses that move fast.',
-    primary: 'Let’s connect', secondary: 'Explore my journey',
+    nav: { work: 'Expertise', experience: 'Initiatives', connect: 'Collaborate' },
+    heroEyebrow: 'Professional portfolio & agrotourism',
+    hero: '20+ Years in Technology.<br /><span>Now Building the Future of Agriculture.</span>',
+    lede: 'Combining deep experience in large-scale systems architecture and digital startup ecosystems to reimagine premium Indonesian durian cultivation through agritech.',
+    primary: 'Let’s talk', secondary: 'Explore initiatives',
     aboutLabel: 'About',
-    about: 'Calm operations.<br />Meaningful impact.',
-    intro: 'For more than two decades, I have translated technology complexity into reliable systems, teams, and experiences—from headquarters to field operations across Indonesia.',
-    values: [['20+', 'years of experience across industries and IT operations.'], ['13,500+', 'people supported across a group of businesses.'], ['9', 'subsidiaries brought together by shared standards.']],
-    workLabel: 'Focus', work: 'Making scale feel simple.',
+    about: 'From Lines of Code to<br />Fertile Indonesian Soil.',
+    intro: 'Two decades have been spent designing information systems architecture, leading engineering teams, and navigating Indonesia’s technology startup landscape. That journey formed a deep understanding of how technology must solve real problems.<br /><br />The focus now turns to a foundational sector with immense potential: agriculture. Through modernising premium durian estates and building agritech ventures, the mission is to raise the value of Indonesian produce to a world-class level.',
+    values: [['20+', 'Years of startup & IT experience.'], ['3', 'Active business initiatives.'], ['50+ hectares', 'Integrated durian estate area.'], ['15+', 'Enterprise system architectures designed.']],
+    workLabel: 'Core expertise', work: 'Expertise & technology mastery.',
     cases: [
-      ['Operations that stay ready', 'Designing end-to-end IT services that keep teams productive—every day.'],
-      ['Security & compliance', 'Aligning security practice with business needs and Indonesian regulation.'],
-      ['Foundations for growth', 'Building office, network, and warehouse infrastructure from the ground up.']
+      ['System Integration', 'Connecting field IoT sensors, meteorological data, and warehouse logistics into one integrated analytics dashboard.'],
+      ['Startup Building & Scaling', 'Building digital business models, recruiting engineering teams, and preparing foundations that can grow.'],
+      ['IT Infrastructure', 'Resilient cloud architecture, edge computing for low-connectivity estates, and end-to-end supply-chain data security.']
     ],
-    expLabel: 'Journey', exp: 'Experience built in the field.',
+    expLabel: 'Core business initiatives', exp: 'An active business collective.',
     roles: [
-      ['2021 — present', 'Head of IT Operations', 'byOrange', 'Leading end-to-end IT Operations and Support for a holding group with nine subsidiaries in fintech, payments, logistics, warehousing, and BPO.', 'Jakarta'],
-      ['2019 — 2021', 'IT Support Manager', 'OVO (PT Visionet Internasional)', 'Led IT service, IAM, infrastructure, and operational readiness for thousands of employees and devices.', 'Jakarta'],
-      ['2012 — 2019', 'IT Support & Operational Manager', 'PT Bilna · Orami & Berrybenka', 'Built and scaled operational infrastructure for headquarters and e-commerce fulfillment centers.', 'Jakarta']
+      ['Duren Signature', 'Premium Durian Store', 'Premium e-commerce', 'A premium durian distribution centre with produce curated using quality-sensor data.', 'West Java'],
+      ['Pratama Farms', 'Modern Durian Estate', 'Agrotourism & estate', 'A modern durian estate implementing IoT for irrigation, fertilisation, and early pest detection.', 'West Java'],
+      ['Tanisinergi', 'AgriTech Startup', 'Technology platform', 'Building a digital supply-chain platform that connects community estates with global premium markets.', 'Indonesia']
     ],
-    contactLabel: 'Let’s talk', contact: 'Build what people<br />can depend on.', contactText: 'Open to conversations about IT operations, infrastructure, security, and how technology can help a business grow.', contactButton: 'Visit LinkedIn', copyright: '© 2026 Dennyspace. Made with attention to every detail.'
+    contactLabel: 'Vision & philosophy', contact: '“The best technology is not the most complex, but the one that makes the greatest impact when it touches the roots of people’s lives.”', contactText: 'Open to system-integrator consulting, startup advisory and mentoring, and orchard & agritech partnerships.', contactButton: 'Connect on LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
   }
 };
 

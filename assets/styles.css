@@ -46,7 +46,7 @@ h1 { font-size: clamp(48px, 8vw, 104px); letter-spacing: -.07em; line-height: .9
 .section-label { color: var(--muted); font-size: 15px; font-weight: 600; letter-spacing: .02em; margin: 0 0 18px; text-transform: uppercase; }
 h2 { font-size: clamp(36px, 5.3vw, 68px); letter-spacing: -.055em; line-height: 1.05; margin: 0; max-width: 840px; }
 .intro { color: #515154; font-size: clamp(20px, 2.3vw, 27px); letter-spacing: -.025em; line-height: 1.35; margin: 25px 0 0; max-width: 760px; }
-.values { border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 70px; }
+.values { border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; }
 .value { border-right: 1px solid var(--line); padding: 26px 28px 8px 0; }
 .value + .value { padding-left: 28px; }
 .value:last-child { border-right: 0; }
