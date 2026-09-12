@@ -21,6 +21,12 @@ const copy = {
       ['Pratama Farms', 'Kebun Durian Modern', 'Agrowisata & perkebunan', 'Perkebunan durian modern dengan implementasi IoT otomatis untuk penyiraman, pemupukan, dan deteksi dini hama.', 'Jawa Barat'],
       ['Tanisinergi', 'Startup AgriTech', 'Platform teknologi', 'Membangun platform supply chain digital yang menghubungkan perkebunan rakyat dengan pasar premium global.', 'Indonesia']
     ],
+    serviceLabel: 'Layanan profesional', serviceTitle: 'Kolaborasi & konsultasi.', serviceIntro: 'Membuka kesempatan terbatas untuk mendampingi korporasi tradisional beralih ke digital, serta mentoring pendiri startup tahap awal.',
+    services: [
+      ['Konsultasi System Integrator', 'Penyusunan arsitektur sistem, audit infrastruktur IT legasi, dan strategi transformasi digital bagi perusahaan agrobisnis & manufaktur.', 'Mulai IDR 15jt / sesi'],
+      ['Advisory & Mentoring Startup', 'Pendampingan strategi scale-up produk, pembentukan struktur engineering, efisiensi cloud-cost, hingga persiapan pitch deck.', 'Skema bulanan retainer'],
+      ['Kemitraan Kebun & AgriTech', 'Peluang investasi pengembangan teknologi di kebun durian, riset bersama sensor lapangan, serta uji coba alat agritech.', 'Mulai IDR 250jt / kemitraan']
+    ],
     contactLabel: 'Visi & filosofi', contact: '“Teknologi terbaik bukan teknologi yang paling rumit, tetapi yang paling berdampak langsung saat menyentuh akar kehidupan manusia.”', contactText: 'Terbuka untuk konsultasi system integrator, advisory dan mentoring startup, serta kemitraan kebun & agritech.', contactButton: 'Mari terhubung di LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
   },
   en: {
@@ -45,6 +51,12 @@ const copy = {
       ['Pratama Farms', 'Modern Durian Estate', 'Agrotourism & estate', 'A modern durian estate implementing IoT for irrigation, fertilisation, and early pest detection.', 'West Java'],
       ['Tanisinergi', 'AgriTech Startup', 'Technology platform', 'Building a digital supply-chain platform that connects community estates with global premium markets.', 'Indonesia']
     ],
+    serviceLabel: 'Professional services', serviceTitle: 'Collaboration & consulting.', serviceIntro: 'Opening a limited number of engagements to help traditional corporations transition to digital, and to mentor early-stage startup founders.',
+    services: [
+      ['System Integrator Consulting', 'Systems architecture, legacy IT infrastructure audits, and digital-transformation strategy for agribusiness and manufacturing companies.', 'From IDR 15m / session'],
+      ['Startup Advisory & Mentoring', 'Product scale-up strategy, engineering organisation design, cloud-cost efficiency, and pitch-deck preparation.', 'Monthly retainer model'],
+      ['Orchard & AgriTech Partnerships', 'Investment opportunities in durian-estate technology, collaborative field-sensor research, and agritech trials.', 'From IDR 250m / partnership']
+    ],
     contactLabel: 'Vision & philosophy', contact: '“The best technology is not the most complex, but the one that makes the greatest impact when it touches the roots of people’s lives.”', contactText: 'Open to system-integrator consulting, startup advisory and mentoring, and orchard & agritech partnerships.', contactButton: 'Connect on LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
   }
 };
@@ -58,12 +70,13 @@ const arrow = '<span class="arrow" aria-hidden="true">›</span>';
 const values = t.values.map(([number, text]) => `<article class="value"><div class="value-number">${number}</div><p>${text}</p></article>`).join('');
 const cards = t.cases.map(([title, text], i) => `<article class="case ${['one','two','three'][i]}"><small>0${i + 1}</small><h3>${title}</h3><p>${text}</p><div class="shapes" aria-hidden="true"><i></i><i></i><i></i></div></article>`).join('');
 const roles = t.roles.map(([time, title, org, description, place]) => `<article class="role"><time>${time}</time><div><h3>${title}</h3><p>${org} · ${description}</p></div><div class="role-location">${place}</div></article>`).join('');
+const services = t.services.map(([title, text, fee]) => `<article class="service-card"><h3>${title}</h3><p>${text}</p><strong>${fee}</strong></article>`).join('');
 
 document.querySelector('#app').innerHTML = `
   <nav class="nav" aria-label="Primary navigation">
     <a class="brand" href="#top" aria-label="Dennyspace home">denny<span class="brand-mark">space</span></a>
     <div class="nav-links">
-      <a href="#focus">${t.nav.work}</a><a href="#journey">${t.nav.experience}</a><a href="#connect">${t.nav.connect}</a>
+      <a href="#focus">${t.nav.work}</a><a href="#journey">${t.nav.experience}</a><a href="#collaborate">${t.nav.connect}</a>
       <a class="locale" href="/${other}/" aria-label="Switch to ${other === 'id' ? 'Bahasa Indonesia' : 'English'}"><span class="${locale === 'id' ? 'is-current' : ''}">ID</span><span class="${locale === 'en' ? 'is-current' : ''}">EN</span></a>
     </div>
   </nav>
@@ -75,5 +88,6 @@ document.querySelector('#app').innerHTML = `
   <section class="section"><div class="section-inner"><p class="section-label">${t.aboutLabel}</p><h2>${t.about}</h2><p class="intro">${t.intro}</p><div class="values">${values}</div></div></section>
   <section class="section work" id="focus"><div class="section-inner"><p class="section-label">${t.workLabel}</p><h2>${t.work}</h2><div class="work-grid">${cards}</div></div></section>
   <section class="section experience" id="journey"><div class="section-inner"><p class="section-label">${t.expLabel}</p><h2>${t.exp}</h2><div class="timeline">${roles}</div></div></section>
+  <section class="section services" id="collaborate"><div class="section-inner"><p class="section-label">${t.serviceLabel}</p><h2>${t.serviceTitle}</h2><p class="intro">${t.serviceIntro}</p><div class="service-grid">${services}</div></div></section>
   <section class="section contact" id="connect"><div class="contact-ring" aria-hidden="true"></div><div class="section-inner" style="position:relative"><p class="section-label">${t.contactLabel}</p><h2>${t.contact}</h2><p class="intro">${t.contactText}</p><a class="button" href="${linkedIn}" target="_blank" rel="noopener noreferrer">${t.contactButton} ${arrow}</a></div></section>
   <footer class="footer"><div class="footer-inner"><span>${t.copyright}</span><a href="${linkedIn}" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></footer>`;
