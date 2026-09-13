@@ -1,6 +1,6 @@
 const copy = {
   id: {
-    nav: { work: 'Keahlian', experience: 'Perjalanan', connect: 'Kolaborasi' },
+    nav: { work: 'Keahlian', consult: 'Konsultasi', experience: 'Perjalanan', connect: 'Kolaborasi' },
     heroEyebrow: 'Octavia Denny Musa Irawan',
     hero: '20+ Tahun di Dunia Teknologi.<br /><span>Kini Membangun Masa Depan Agrikultur.</span>',
     lede: 'Profesional teknologi dan IT, system integrator, petani durian premium, serta agritech builder. Menghubungkan sistem digital dengan kebutuhan di lapangan.',
@@ -85,7 +85,7 @@ const copy = {
     comingSoon: 'Segera hadir',
   },
   en: {
-    nav: { work: 'Expertise', experience: 'Journey', connect: 'Collaborate' },
+    nav: { work: 'Expertise', consult: 'Consulting', experience: 'Journey', connect: 'Collaborate' },
     heroEyebrow: 'Octavia Denny Musa Irawan',
     hero: '20+ Years in Technology.<br /><span>Now Building the Future of Agriculture.</span>',
     lede: 'Technology and IT professional, system integrator, premium durian farmer, and agritech builder connecting digital systems with field needs.',
@@ -215,6 +215,7 @@ document.body.innerHTML = [
   '<button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>',
   '<nav aria-label="Primary navigation">',
   '<a href="#work">' + t.nav.work + '</a>',
+  '<a href="#services">' + t.nav.consult + '</a>',
   '<a href="#experience">' + t.nav.experience + '</a>',
   '<a href="#connect">' + t.nav.connect + '</a>',
   '<a class="language" href="../' + (locale === 'id' ? 'en' : 'id') + '/">' + (locale === 'id' ? 'EN' : 'ID') + '</a>',
@@ -228,7 +229,7 @@ document.body.innerHTML = [
   '<section class="work section" id="work"><div class="section-heading reveal"><p class="eyebrow">' + t.workLabel + '</p><h2>' + t.work + '</h2><p>' + t.workIntro + '</p></div><div class="competency-grid reveal">' + competencies + '</div></section>',
   '<section class="scale section" id="scale"><div class="section-heading reveal"><h2>' + t.scale + '</h2></div><div class="scale-grid reveal">' + scaleCards + '</div></section>',
   '<section class="experience section section-light" id="experience"><div class="section-heading reveal"><p class="eyebrow">' + t.expLabel + '</p><h2>' + t.exp + '</h2></div><div class="timeline reveal">' + roles + '</div></section>',
-  '<section class="services section"><div class="section-heading reveal"><p class="eyebrow">' + t.serviceLabel + '</p><h2>' + t.service + '</h2><p>' + t.serviceIntro + '</p></div><div class="service-grid reveal">' + services + '</div></section>',
+  '<section class="services section" id="services"><div class="section-heading reveal"><p class="eyebrow">' + t.serviceLabel + '</p><h2>' + t.service + '</h2><p>' + t.serviceIntro + '</p></div><div class="service-grid reveal">' + services + '</div></section>',
   '<section class="orchard section section-light" id="orchard"><div class="section-heading reveal"><p class="eyebrow">' + t.orchardLabel + '</p><h2>' + t.orchard + '</h2><p>' + t.orchardIntro + '</p></div><div class="orchard-grid reveal">' + orchardServices + '</div></section>',
   '<section class="notes section section-light" id="notes"><div class="section-heading reveal"><p class="eyebrow">' + t.notesLabel + '</p><h2>' + t.notesTitle + '</h2><p>' + t.notesIntro + '</p></div><div class="notes-grid reveal">' + notes + '</div></section>',
   '<section class="contact section" id="connect"><div class="contact-grid reveal"><div><p class="eyebrow">' + t.contactLabel + '</p><h2>' + t.contact + '</h2><p>' + t.contactText + '</p></div><div class="contact-channels"><a class="contact-channel" href="mailto:' + email + '"><span>' + t.contactEmailLabel + '</span><strong>' + email + ' ' + arrow + '</strong></a><a class="contact-channel" href="' + linkedIn + '" target="_blank" rel="noreferrer"><span>' + t.contactLinkedInLabel + '</span><strong>octaviadenny ' + arrow + '</strong></a></div></div></section>',
