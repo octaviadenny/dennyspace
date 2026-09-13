@@ -78,7 +78,8 @@ const copy = {
     contactLabel: 'Visi & Filosofi',
     contact: '“Teknologi terbaik bukan teknologi yang paling rumit, tetapi yang paling berdampak langsung saat menyentuh akar kehidupan manusia.”',
     contactText: 'Terbuka untuk percakapan tentang teknologi, integrasi sistem, durian premium, dan agritech.',
-    contactCta: 'Terhubung di LinkedIn',
+    contactEmailLabel: 'Email',
+    contactLinkedInLabel: 'LinkedIn',
     footer: 'Profesional teknologi, petani durian premium, dan agritech builder.',
     comingSoon: 'Segera hadir',
   },
@@ -161,7 +162,8 @@ const copy = {
     contactLabel: 'Octavia Denny Musa Irawan’s vision & philosophy',
     contact: '“The best technology is not the most complex, but the one that creates the most direct impact when it touches the roots of human life.”',
     contactText: 'Open to conversations about technology, system integration, premium durian, and agritech.',
-    contactCta: 'Connect on LinkedIn',
+    contactEmailLabel: 'Email',
+    contactLinkedInLabel: 'LinkedIn',
     footer: 'Technology professional, premium durian farmer, and agritech builder.',
     comingSoon: 'Coming soon',
   },
@@ -170,6 +172,7 @@ const copy = {
 const locale = document.documentElement.lang === 'en' ? 'en' : 'id';
 const t = copy[locale];
 const linkedIn = 'https://www.linkedin.com/in/octaviadenny/';
+const email = 'octavia.dny@gmail.com';
 const arrow = '<span aria-hidden="true">→</span>';
 const card = (tag, className, content) => '<' + tag + ' class="' + className + '">' + content + '</' + tag + '>';
 
@@ -193,7 +196,7 @@ const roles = t.roles.map(function (item) {
 }).join('');
 
 const services = t.services.map(function (item) {
-  return card('article', 'service-card', '<h3>' + item[0] + '</h3><p>' + item[1] + '</p><strong>' + t.serviceCta + ' ' + arrow + '</strong>');
+  return card('article', 'service-card', '<h3>' + item[0] + '</h3><p>' + item[1] + '</p><a class="contact-link" href="#connect">' + t.serviceCta + ' ' + arrow + '</a>');
 }).join('');
 
 const orchardServices = t.orchardServices.map(function (item, index) {
@@ -226,7 +229,7 @@ document.body.innerHTML = [
   '<section class="services section"><div class="section-heading reveal"><p class="eyebrow">' + t.serviceLabel + '</p><h2>' + t.service + '</h2><p>' + t.serviceIntro + '</p></div><div class="service-grid reveal">' + services + '</div></section>',
   '<section class="orchard section section-light" id="orchard"><div class="section-heading reveal"><p class="eyebrow">' + t.orchardLabel + '</p><h2>' + t.orchard + '</h2><p>' + t.orchardIntro + '</p></div><div class="orchard-grid reveal">' + orchardServices + '</div></section>',
   '<section class="notes section section-light" id="notes"><div class="section-heading reveal"><p class="eyebrow">' + t.notesLabel + '</p><h2>' + t.notesTitle + '</h2><p>' + t.notesIntro + '</p></div><div class="notes-grid reveal">' + notes + '</div></section>',
-  '<section class="contact section" id="connect"><div class="contact-grid reveal"><div><p class="eyebrow">' + t.contactLabel + '</p><h2>' + t.contact + '</h2><p>' + t.contactText + '</p></div><a class="button button-primary" href="' + linkedIn + '" target="_blank" rel="noreferrer">' + t.contactCta + ' ' + arrow + '</a></div></section>',
+  '<section class="contact section" id="connect"><div class="contact-grid reveal"><div><p class="eyebrow">' + t.contactLabel + '</p><h2>' + t.contact + '</h2><p>' + t.contactText + '</p></div><div class="contact-channels"><a class="contact-channel" href="mailto:' + email + '"><span>' + t.contactEmailLabel + '</span><strong>' + email + ' ' + arrow + '</strong></a><a class="contact-channel" href="' + linkedIn + '" target="_blank" rel="noreferrer"><span>' + t.contactLinkedInLabel + '</span><strong>octaviadenny ' + arrow + '</strong></a></div></div></section>',
   '</main>',
   '<footer><a class="wordmark" href="./">dennyspace<span>.</span></a><p>' + t.footer + '</p><p>© ' + new Date().getFullYear() + ' Octavia Denny Musa Irawan</p></footer>',
 ].join('');

@@ -120,14 +120,15 @@ h2 { font-size: clamp(42px, 5.4vw, 72px); letter-spacing: -.06em; line-height: 1
 .service-card { background: #fff; display: flex; flex-direction: column; min-height: 340px; overflow: hidden; position: relative; }
 .service-card:nth-child(1) { background: #111214; color: #f5f5f7; }
 .service-card:nth-child(1) p { color: #d1d1d6; }
-.service-card:nth-child(1) strong { color: #69b7ff; }
+.service-card:nth-child(1) .contact-link { color: #69b7ff; }
 .service-card:nth-child(2) { background: #dceeff; color: #15375e; }
 .service-card:nth-child(2) p, .service-card:nth-child(3) p { color: currentColor; opacity: .76; }
-.service-card:nth-child(2) strong { color: #15375e; }
+.service-card:nth-child(2) .contact-link { color: #15375e; }
 .service-card:nth-child(3) { background: #f5eee2; color: #5b3a1b; }
-.service-card:nth-child(3) strong { color: #9d5415; }
+.service-card:nth-child(3) .contact-link { color: #9d5415; }
 .service-card h3 { margin-top: 0; }
-.service-card strong { color: var(--blue); font-size: 16px; margin-top: auto; padding-top: 24px; }
+.service-card .contact-link { color: var(--blue); font-size: 16px; font-weight: 700; margin-top: auto; padding-top: 24px; }
+.service-card .contact-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .orchard { background: #fff; }
 .orchard-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); margin-top: 55px; }
@@ -165,8 +166,12 @@ h2 { font-size: clamp(42px, 5.4vw, 72px); letter-spacing: -.06em; line-height: 1
 .contact .eyebrow { color: #58a6ff; }
 .contact h2 { font-size: clamp(34px, 4.4vw, 61px); max-width: 850px; }
 .contact-grid > div > p:last-child { color: #a1a1a6; font-size: 18px; margin: 28px 0 0; max-width: 600px; }
-.contact .button-primary { background: #f5f5f7; color: #171717; white-space: nowrap; }
-.contact .button-primary:hover { background: #fff; }
+.contact-channels { display: grid; gap: 12px; min-width: 325px; }
+.contact-channel { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; color: #f5f5f7; display: grid; gap: 7px; padding: 20px 22px; transition: background .2s, transform .2s; }
+.contact-channel:hover { background: rgba(255,255,255,.14); transform: translateY(-2px); }
+.contact-channel span { color: #a1a1a6; font-size: 13px; font-weight: 650; }
+.contact-channel strong { font-size: 18px; letter-spacing: -.02em; }
+.contact-channel strong span { color: #58a6ff; display: inline; font-size: inherit; margin-left: 4px; }
 footer { align-items: center; background: #000; border-top: 1px solid #2b2b2d; color: #86868b; display: grid; font-size: 12px; gap: 25px; grid-template-columns: auto 1fr auto; padding: 25px max(24px, calc((100vw - 1120px) / 2)) 36px; }
 footer .wordmark { color: #f5f5f7; }
 footer p { margin: 0; }
@@ -205,7 +210,7 @@ footer p:nth-child(2) { text-align: center; }
   .timeline { margin-top: 42px; }
   .timeline-item { gap: 9px; grid-template-columns: 1fr; padding: 25px 0; }
   .contact-grid { align-items: start; gap: 35px; grid-template-columns: 1fr; }
-  .contact .button { justify-self: start; }
+  .contact-channels { min-width: 0; width: 100%; }
   footer { align-items: start; gap: 13px; grid-template-columns: 1fr; }
   footer p:nth-child(2) { text-align: left; }
 }
