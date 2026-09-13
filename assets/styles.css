@@ -121,6 +121,22 @@ h2 { font-size: clamp(42px, 5.4vw, 72px); letter-spacing: -.06em; line-height: 1
 .service-card:nth-child(3) strong { color: #9d5415; }
 .service-card h3 { margin-top: 0; }
 .service-card strong { color: var(--blue); font-size: 16px; margin-top: auto; padding-top: 24px; }
+
+.orchard { background: #fff; }
+.orchard-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); margin-top: 55px; }
+.orchard-card { background: #f5f5f7; border-radius: 28px; min-height: 270px; overflow: hidden; padding: 31px; position: relative; }
+.orchard-card::after { border: 1px solid currentColor; border-radius: 50%; content: ""; height: 210px; opacity: .13; position: absolute; right: -88px; top: -90px; width: 210px; }
+.orchard-card:nth-child(1) { background: #183f37; color: #f5f5f7; }
+.orchard-card:nth-child(1) p { color: #d1e7df; }
+.orchard-card:nth-child(2) { background: #e8f0ff; color: #17375e; }
+.orchard-card:nth-child(3) { background: #fbefd9; color: #714718; }
+.orchard-card:nth-child(4) { background: #ede8ff; color: #403176; }
+.orchard-card:nth-child(5) { background: #dff4eb; color: #164b38; }
+.orchard-card:nth-child(6) { background: #ffe9df; color: #74331d; }
+.orchard-card small { color: currentColor; display: block; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+.orchard-card h3 { font-size: clamp(25px, 2.5vw, 34px); letter-spacing: -.05em; line-height: 1.05; margin: 21px 0 0; position: relative; z-index: 1; }
+.orchard-card p { color: currentColor; font-size: 16px; line-height: 1.48; margin: 19px 0 0; opacity: .78; position: relative; z-index: 1; }
+
 .notes { background: #fff; }
 .notes-grid { grid-template-columns: 1.15fr .925fr .925fr; }
 .note-card { background: var(--surface); display: flex; flex-direction: column; min-height: 285px; overflow: hidden; position: relative; }
@@ -170,8 +186,8 @@ footer p:nth-child(2) { text-align: center; }
   .hero-orbit { height: 115vw; opacity: .77; right: -55vw; top: 21%; width: 115vw; }
   .values { grid-template-columns: 1fr; margin-top: 48px; }
   .value, .value + .value { min-height: 0; padding: 26px; }
-  .competency-grid, .service-grid, .notes-grid, .scale-grid { grid-template-columns: 1fr; margin-top: 38px; }
-  .competency-card, .service-card, .note-card { min-height: 0; padding: 28px; }
+  .competency-grid, .service-grid, .orchard-grid, .notes-grid, .scale-grid { grid-template-columns: 1fr; margin-top: 38px; }
+  .competency-card, .service-card, .orchard-card, .note-card { min-height: 0; padding: 28px; }
   .scale { padding-inline: 22px; }
   .scale-grid { gap: 18px; margin-top: 45px; }
   .scale-card, .scale-card:nth-child(3) { border-radius: 28px; grid-column: auto; min-height: 330px; padding: 28px; }

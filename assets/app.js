@@ -49,6 +49,17 @@ const copy = {
       ['IT Management & Infrastructure', 'Pendampingan pengelolaan teknologi, infrastruktur, keamanan, dan tata kelola IT.'],
       ['Digital & Agritech Strategy', 'Menerjemahkan peluang bisnis menjadi langkah digital dan solusi agritech yang terukur.'],
     ],
+    orchardLabel: 'Layanan Kebun',
+    orchard: 'Pendampingan kebun durian profesional.',
+    orchardIntro: 'Jasa perencanaan, pembangunan, hingga pengelolaan manajemen kebun secara menyeluruh agar produktif dan menghasilkan buah berkualitas tinggi.',
+    orchardServices: [
+      ['Survei dan Analisis Lahan', 'Memeriksa kesesuaian lokasi, kondisi topografi, serta menguji kualitas dan tingkat keasaman pH tanah.'],
+      ['Perencanaan Desain Kebun', 'Menyusun tata letak kebun, menentukan jarak tanam ideal, dan merencanakan sistem pengairan.'],
+      ['Pengadaan Bibit Unggul', 'Memilih dan memverifikasi bibit durian berkualitas tinggi seperti Musang King atau Bawor yang bebas penyakit.'],
+      ['Kontraktor Pembangunan Kebun', 'Melakukan penataan lahan, pembuatan lubang tanam, hingga penanaman bibit secara teknis.'],
+      ['Manajemen Perawatan Berkala', 'Memberikan panduan atau eksekusi langsung untuk pemupukan, penyiraman, pemangkasan cabang, dan pengendalian hama.'],
+      ['Analisis Kelayakan Usaha & Pelatihan', 'Menghitung proyeksi bisnis, estimasi modal, serta melatih pemilik atau pekerja kebun dalam manajemen agribisnis.'],
+    ],
     notesLabel: 'Blog',
     notesTitle: 'Tulisan & pemikiran.',
     notesIntro: 'Catatan tentang teknologi, kebun durian premium, dan perjalanan membangun agritech.',
@@ -114,6 +125,17 @@ const copy = {
       ['IT Management & Infrastructure', 'Guidance for technology management, infrastructure, security, and IT governance.'],
       ['Digital & Agritech Strategy', 'Turning business opportunities into measured digital steps and agritech solutions.'],
     ],
+    orchardLabel: 'Orchard Services',
+    orchard: 'Professional durian orchard support.',
+    orchardIntro: 'Planning, development, and hands-on orchard management services for productive orchards and high-quality fruit.',
+    orchardServices: [
+      ['Site Survey & Land Analysis', 'Assessing site suitability, topography, soil quality, and soil pH.'],
+      ['Orchard Design Planning', 'Creating the orchard layout, defining suitable planting distances, and planning irrigation systems.'],
+      ['Premium Seedling Sourcing', 'Selecting and verifying high-quality, disease-free durian seedlings such as Musang King or Bawor.'],
+      ['Orchard Development', 'Supporting land preparation, planting-hole construction, and technical seedling planting.'],
+      ['Regular Orchard Care', 'Guidance or hands-on support for fertilising, irrigation, pruning, and pest management.'],
+      ['Business Feasibility & Training', 'Preparing business projections, capital estimates, and orchard-management training for owners and teams.'],
+    ],
     notesLabel: 'Blog',
     notesTitle: 'Notes & thinking.',
     notesIntro: 'Notes on technology, premium durian, and the journey of building agritech. The first articles are coming soon.',
@@ -158,6 +180,10 @@ const services = t.services.map(function (item) {
   return card('article', 'service-card', '<h3>' + item[0] + '</h3><p>' + item[1] + '</p><strong>' + t.serviceCta + ' ' + arrow + '</strong>');
 }).join('');
 
+const orchardServices = t.orchardServices.map(function (item, index) {
+  return card('article', 'orchard-card', '<small>0' + (index + 1) + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p>');
+}).join('');
+
 const notes = t.notes.map(function (item) {
   return card('article', 'note-card', '<small>' + t.notesLabel + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p><span>' + t.comingSoon + '</span>');
 }).join('');
@@ -182,6 +208,7 @@ document.body.innerHTML = [
   '<section class="scale section" id="scale"><div class="section-heading reveal"><h2>' + t.scale + '</h2></div><div class="scale-grid reveal">' + scaleCards + '</div></section>',
   '<section class="experience section section-light" id="experience"><div class="section-heading reveal"><p class="eyebrow">' + t.expLabel + '</p><h2>' + t.exp + '</h2></div><div class="timeline reveal">' + roles + '</div></section>',
   '<section class="services section"><div class="section-heading reveal"><p class="eyebrow">' + t.serviceLabel + '</p><h2>' + t.service + '</h2><p>' + t.serviceIntro + '</p></div><div class="service-grid reveal">' + services + '</div></section>',
+  '<section class="orchard section section-light" id="orchard"><div class="section-heading reveal"><p class="eyebrow">' + t.orchardLabel + '</p><h2>' + t.orchard + '</h2><p>' + t.orchardIntro + '</p></div><div class="orchard-grid reveal">' + orchardServices + '</div></section>',
   '<section class="notes section section-light" id="notes"><div class="section-heading reveal"><p class="eyebrow">' + t.notesLabel + '</p><h2>' + t.notesTitle + '</h2><p>' + t.notesIntro + '</p></div><div class="notes-grid reveal">' + notes + '</div></section>',
   '<section class="contact section" id="connect"><div class="contact-grid reveal"><div><p class="eyebrow">' + t.contactLabel + '</p><h2>' + t.contact + '</h2><p>' + t.contactText + '</p></div><a class="button button-primary" href="' + linkedIn + '" target="_blank" rel="noreferrer">' + t.contactCta + ' ' + arrow + '</a></div></section>',
   '</main>',
