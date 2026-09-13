@@ -25,6 +25,13 @@ const copy = {
       ['AgriTech Innovation', 'Menggunakan teknologi digital untuk pengelolaan kebun, data lapangan, dan pengambilan keputusan.'],
       ['Digital Transformation', 'Mengubah proses manual menjadi sistem terintegrasi yang siap tumbuh, transparan, dan mudah dipantau.'],
       ['Product Strategy', 'Menyusun roadmap produk yang berpijak pada nilai bisnis, user experience, dan kesiapan teknis.'],
+      ['Manajemen Agribisnis', 'Keahlian konsultan kebun durian memadukan ilmu budidaya, desain kebun, perlindungan tanaman, dan manajemen operasional.', [
+        ['Ilmu Tanah', 'Analisis unsur hara, tingkat keasaman pH, dan drainase lahan agar durian dapat tumbuh optimal.'],
+        ['Fisiologi dan Pemuliaan Tanaman', 'Pemahaman siklus hidup pohon durian, perangsangan pembungaan, teknik pemangkasan, dan penanganan pascapanen.'],
+        ['Arsitektur Lanskap Pertanian', 'Perancangan layout kebun, jarak tanam, dan sistem irigasi seperti drip irrigation untuk efisiensi lahan.'],
+        ['Perlindungan Tanaman', 'Deteksi, pencegahan, dan penanganan hama serta penyakit khas durian seperti kanker batang atau jamur akar.'],
+        ['Manajemen Bisnis & Operasional', 'Perhitungan kelayakan finansial, proyeksi ROI, dan pengelolaan tenaga kerja kebun secara profesional.'],
+      ]],
     ],
     scale: 'Membuat skala terasa sederhana.',
     scaleCards: [
@@ -101,6 +108,13 @@ const copy = {
       ['AgriTech Innovation', 'Applying digital technology to improve orchard management, field data, and decision-making.'],
       ['Digital Transformation', 'Turning manual operations into integrated systems that are scalable, transparent, and easy to monitor at any time.'],
       ['Product Strategy', 'Building product roadmaps focused on business value, user experience, and technical readiness for scale.'],
+      ['Agribusiness Management', 'Durian orchard consulting brings together cultivation science, orchard design, plant protection, and operational management.', [
+        ['Soil Science', 'Analysing nutrients, soil pH, and drainage so durian trees can grow under suitable conditions.'],
+        ['Plant Physiology & Breeding', 'Understanding durian life cycles, flowering stimulation, pruning, and post-harvest handling.'],
+        ['Agricultural Landscape Architecture', 'Designing orchard layouts, planting distances, and irrigation systems such as drip irrigation for efficient land use.'],
+        ['Plant Protection', 'Detecting, preventing, and handling pests and durian diseases such as stem canker and root fungus.'],
+        ['Business & Operations Management', 'Financial feasibility planning, ROI projections, and professional orchard workforce management.'],
+      ]],
     ],
     scale: 'Making scale feel simple.',
     scaleCards: [
@@ -164,7 +178,9 @@ const values = t.values.map(function (item) {
 }).join('');
 
 const competencies = t.competencies.map(function (item, index) {
-  return card('article', 'competency-card', '<small>0' + (index + 1) + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p>');
+  const details = item[2] ? '<ul class="competency-details">' + item[2].map(function (detail) { return '<li><strong>' + detail[0] + '</strong><span>' + detail[1] + '</span></li>'; }).join('') + '</ul>' : '';
+  const className = 'competency-card' + (item[2] ? ' agribusiness-card' : '');
+  return card('article', className, '<small>0' + (index + 1) + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p>' + details);
 }).join('');
 
 const scaleCards = t.scaleCards.map(function (item) {
