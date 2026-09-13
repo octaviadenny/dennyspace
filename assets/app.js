@@ -7,7 +7,7 @@ const copy = {
     primary: 'Mari berdiskusi',
     secondary: 'Lihat perjalanan',
     aboutLabel: 'Tentang',
-    about: 'Dari Baris Kode ke Tanah<br />Subur Nusantara.',
+    about: 'Dari Technolgy Merambah ke<br />Tanah Subur Nusantara.',
     intro: 'Selama lebih dari 20 tahun di dunia teknologi dan IT, saya bekerja di perusahaan multinasional dan startup unicorn, mencakup e-commerce, fintech, digital banking, hingga teknologi logistik. Pengalaman tersebut membentuk cara saya merancang sistem yang kuat, mudah dijalankan, dan siap bertumbuh.<br /><br />Sejak 2021, fokus itu meluas ke kebun durian premium di Solo, Jawa Tengah. Sejak 2023, saya juga membangun toko durian premium di Jakarta dan BSD, sambil mengembangkan agritech untuk pertanian Indonesia.',
     values: [
       ['20+', 'Tahun di dunia teknologi dan IT.'],
@@ -37,7 +37,7 @@ const copy = {
     roles: [
       ['Sejak 2021', 'Petani Durian Premium', 'Kebun durian premium', 'Membudidayakan durian premium dengan pendekatan operasional yang terukur di Solo, Jawa Tengah.', 'Solo, Jawa Tengah'],
       ['Sejak 2023', 'Owner Durian Premium Store', 'Jakarta & BSD', 'Membangun pengalaman membeli durian premium bagi pelanggan di Jakarta dan BSD.', 'Jakarta & BSD'],
-      ['Profesional Tech & IT', 'IT & System Integrator', 'Konsultasi IT', 'Mengelola kebutuhan IT serta mendampingi organisasi melalui arsitektur, infrastruktur, dan integrasi sistem.', 'Indonesia, Tahun 2005 - Now'],
+      ['Profesional Tech & IT', 'IT & System Integrator', 'Konsultasi IT', 'Mengelola kebutuhan IT serta mendampingi organisasi melalui arsitektur, infrastruktur, dan integrasi sistem.', 'Indonesia', 'Indonesia, Tahun 2005 - Now'],
       ['Building Agritech', 'Agritech Builder', 'Teknologi untuk pertanian', 'Mengembangkan fondasi teknologi yang menghubungkan data, proses kebun, dan nilai bisnis pertanian.', 'Indonesia'],
     ],
     serviceLabel: 'Layanan Profesional',
@@ -102,7 +102,7 @@ const copy = {
     roles: [
       ['Since 2021', 'Premium Durian Farmer', 'Premium durian orchard', 'Growing premium durian with a measured operational approach in Solo, Central Java.', 'Solo, Central Java'],
       ['Since 2023', 'Premium Durian Store Owner', 'Jakarta & BSD', 'Building a trusted premium durian buying experience for customers in Jakarta and BSD.', 'Jakarta & BSD'],
-      ['Technology & IT professional', 'IT & System Integrator', 'IT consulting', 'Managing IT needs and guiding organisations through architecture, infrastructure, and system integration.', 'Indonesia, 2005 - Now'],
+      ['Technology & IT professional', 'IT & System Integrator', 'IT consulting', 'Managing IT needs and guiding organisations through architecture, infrastructure, and system integration.', 'Indonesia', 'Indonesia, 2005 - Now'],
       ['Building Agritech', 'Agritech Builder', 'Technology for agriculture', 'Developing a technology foundation that connects data, orchard processes, and agricultural business value.', 'Indonesia'],
     ],
     serviceLabel: 'Professional services',
@@ -150,7 +150,8 @@ const scaleCards = t.scaleCards.map(function (item) {
 }).join('');
 
 const roles = t.roles.map(function (item) {
-  return card('article', 'timeline-item', '<div class="timeline-date">' + item[0] + '</div><div class="timeline-content"><h3>' + item[1] + '</h3><h4>' + item[2] + '</h4><p>' + item[3] + '</p><span>' + item[4] + '</span></div>');
+  const detail = item[5] ? '<span>' + item[5] + '</span>' : '';
+  return card('article', 'timeline-item', '<div class="timeline-date">' + item[0] + detail + '</div><div class="timeline-content"><h3>' + item[1] + '</h3><h4>' + item[2] + '</h4><p>' + item[3] + '</p><span>' + item[4] + '</span></div>');
 }).join('');
 
 const services = t.services.map(function (item) {

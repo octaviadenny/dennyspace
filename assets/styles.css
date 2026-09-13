@@ -91,6 +91,7 @@ h2 { font-size: clamp(42px, 5.4vw, 72px); letter-spacing: -.06em; line-height: 1
 .timeline { border-top: 1px solid var(--line); margin-top: 60px; }
 .timeline-item { border-bottom: 1px solid var(--line); display: grid; gap: 30px; grid-template-columns: 180px 1fr; padding: 29px 0; }
 .timeline-date, .timeline-content span { color: var(--muted); font-size: 14px; }
+.timeline-date span { display: block; margin-top: 8px; }
 .timeline-content h3 { font-size: 25px; letter-spacing: -.04em; line-height: 1.08; margin-bottom: 5px; }
 .timeline-content h4 { color: var(--blue); font-size: 15px; font-weight: 600; margin-bottom: 14px; }
 .timeline-content p { color: #515154; font-size: 16px; line-height: 1.45; margin-bottom: 14px; max-width: 700px; }
