@@ -122,10 +122,12 @@ h2 { font-size: clamp(42px, 5.4vw, 72px); letter-spacing: -.06em; line-height: 1
 .service-card:nth-child(1) p { color: #d1d1d6; }
 .service-card:nth-child(1) .contact-link { color: #69b7ff; }
 .service-card:nth-child(2) { background: #dceeff; color: #15375e; }
-.service-card:nth-child(2) p, .service-card:nth-child(3) p { color: currentColor; opacity: .76; }
+.service-card:nth-child(2) p, .service-card:nth-child(3) p, .service-card:nth-child(4) p { color: currentColor; opacity: .76; }
 .service-card:nth-child(2) .contact-link { color: #15375e; }
 .service-card:nth-child(3) { background: #f5eee2; color: #5b3a1b; }
 .service-card:nth-child(3) .contact-link { color: #9d5415; }
+.service-card:nth-child(4) { background: #dff4eb; color: #164b38; grid-column: 1 / -1; min-height: 245px; }
+.service-card:nth-child(4) .contact-link { color: #24735b; }
 .service-card h3 { margin-top: 0; }
 .service-card .contact-link { color: var(--blue); font-size: 16px; font-weight: 700; margin-top: auto; padding-top: 24px; }
 .service-card .contact-link:hover { text-decoration: underline; text-underline-offset: 4px; }
