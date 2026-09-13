@@ -1,93 +1,202 @@
 const copy = {
   id: {
-    nav: { work: 'Keahlian', experience: 'Inisiatif', connect: 'Kolaborasi' },
-    heroEyebrow: 'Portofolio profesional & agrowisata',
+    nav: { work: 'Keahlian', experience: 'Perjalanan', connect: 'Kolaborasi' },
+    heroEyebrow: 'Octavia Denny Musa Irawan',
     hero: '20+ Tahun di Dunia Teknologi.<br /><span>Kini Membangun Masa Depan Agrikultur.</span>',
-    lede: 'Mengintegrasikan pengalaman panjang dalam arsitektur sistem skala besar dan ekosistem startup digital untuk merevolusi budidaya durian premium Indonesia berbasis agritech.',
-    primary: 'Mari berdiskusi', secondary: 'Lihat inisiatif',
+    lede: 'Profesional teknologi, system integrator, petani durian premium, dan pembangun agritech yang menghubungkan sistem digital dengan kebutuhan nyata di lapangan.',
+    primary: 'Mari berdiskusi',
+    secondary: 'Lihat perjalanan',
     aboutLabel: 'Tentang',
     about: 'Dari Baris Kode ke Tanah<br />Subur Nusantara.',
-    intro: 'Dua dekade dihabiskan untuk merancang arsitektur sistem informasi, memimpin tim engineering, dan menavigasi dinamika startup teknologi di Indonesia. Perjalanan ini melahirkan pemahaman mendalam tentang bagaimana teknologi harus memecahkan masalah nyata.<br /><br />Kini, fokus dialihkan ke sektor yang paling mendasar namun potensial: agrikultur. Melalui modernisasi pengelolaan perkebunan durian premium dan pengembangan startup agritech, misi utamanya adalah meningkatkan nilai tambah hasil bumi Indonesia hingga kelas dunia.',
-    values: [['20+', 'Tahun pengalaman startup & IT.'], ['3', 'Inisiatif bisnis berjalan saat ini.'], ['50+ Hektar', 'Luasan perkebunan durian terintegrasi.'], ['15+', 'Arsitektur sistem enterprise dirancang.']],
-    workLabel: 'Pilar kompetensi', work: 'Keahlian & penguasaan teknologi.',
-    cases: [
-      ['System Integration', 'Menghubungkan sensor IoT lapangan, data meteorologi, dan sistem logistik gudang ke dalam satu dashboard analitik terpadu.'],
-      ['Startup Building & Scaling', 'Membangun model bisnis digital, merekrut tim engineering, dan mempersiapkan fondasi yang siap bertumbuh.'],
-      ['IT Infrastructure', 'Arsitektur cloud tangguh, edge-computing untuk area kebun minim sinyal, dan keamanan data supply chain hulu-ke-hilir.']
+    intro: 'Dua dekade dihabiskan untuk merancang arsitektur sistem informasi, memimpin tim engineering, dan menavigasi dinamika startup teknologi di Indonesia. Perjalanan ini melahirkan pemahaman mendalam tentang bagaimana teknologi harus memecahkan masalah nyata.<br /><br />Sejak 2021, fokus tersebut juga bertumbuh di kebun durian premium di Solo, Jawa Tengah. Sejak 2023, perjalanan berlanjut melalui toko durian premium di Jakarta dan BSD, sambil membangun fondasi agritech yang relevan bagi pertanian Indonesia.',
+    values: [
+      ['20+', 'Tahun pengalaman di dunia teknologi.'],
+      ['Sejak 2021', 'Petani durian premium di Solo, Jawa Tengah.'],
+      ['Sejak 2023', 'Pemilik toko durian premium di Jakarta & BSD.'],
+      ['Sekarang', 'Membangun solusi agritech.'],
     ],
-    expLabel: 'Inisiatif bisnis utama', exp: 'Kolektif bisnis aktif.',
+    workLabel: 'Pilar kompetensi',
+    work: 'Keahlian & penguasaan teknologi.',
+    workIntro: 'Menghubungkan standar teknologi dengan operasional bisnis dan kebutuhan lapangan agar setiap sistem menciptakan dampak yang bisa dirasakan.',
+    competencies: [
+      ['System Integration', 'Merancang dan menghubungkan aplikasi, data, infrastruktur, serta alur kerja operasional menjadi satu sistem yang terarah.'],
+      ['Startup Building & Scaling', 'Membangun fondasi produk, tim, dan proses operasional yang siap berkembang bersama kebutuhan bisnis.'],
+      ['IT Infrastructure', 'Arsitektur cloud tangguh, edge-computing untuk area kebun minim sinyal, dan keamanan data supply chain hulu-ke-hilir.'],
+      ['AgriTech Innovation', 'Menerapkan teknologi digital untuk membantu pengelolaan kebun, data lapangan, dan pengambilan keputusan yang lebih baik.'],
+      ['Digital Transformation', 'Mengubah operasional manual menjadi sistem terintegrasi yang siap skala, transparan, dan mudah dipantau secara real-time.'],
+      ['Product Strategy', 'Membangun roadmap produk yang fokus pada nilai bisnis, pengalaman pengguna, dan kesiapan teknis untuk skala besar.'],
+    ],
+    expLabel: 'Perjalanan',
+    exp: 'Teknologi, kebun, dan agritech.',
     roles: [
-      ['Duren Signature', 'Toko Durian Premium', 'E-commerce premium', 'Pusat distribusi durian kualitas terbaik hasil kurasi berbasis sensor kualitas.', 'Jawa Barat'],
-      ['Pratama Farms', 'Kebun Durian Modern', 'Agrowisata & perkebunan', 'Perkebunan durian modern dengan implementasi IoT otomatis untuk penyiraman, pemupukan, dan deteksi dini hama.', 'Jawa Barat'],
-      ['Tanisinergi', 'Startup AgriTech', 'Platform teknologi', 'Membangun platform supply chain digital yang menghubungkan perkebunan rakyat dengan pasar premium global.', 'Indonesia']
+      ['Sejak 2021', 'Petani Durian Premium', 'Kebun durian premium', 'Membudidayakan durian premium dengan pendekatan operasional yang terukur di Solo, Jawa Tengah.', 'Solo, Jawa Tengah'],
+      ['Sejak 2023', 'Pemilik Toko Durian Premium', 'Jakarta & BSD', 'Membangun pengalaman membeli durian premium yang terpercaya untuk pelanggan di Jakarta dan BSD.', 'Jakarta & BSD'],
+      ['Profesional teknologi', 'IT Manager & System Integrator', 'Manajemen dan konsultasi IT', 'Mengelola kebutuhan IT serta mendampingi organisasi melalui arsitektur, infrastruktur, dan integrasi sistem.', 'Indonesia'],
+      ['Membangun sekarang', 'Agritech Builder', 'Teknologi untuk pertanian', 'Mengembangkan fondasi teknologi yang menghubungkan data, proses kebun, dan nilai bisnis pertanian.', 'Indonesia'],
     ],
-    serviceLabel: 'Layanan profesional', serviceTitle: 'Kolaborasi & konsultasi.', serviceIntro: 'Membuka kesempatan terbatas untuk mendampingi korporasi tradisional beralih ke digital, serta mentoring pendiri startup tahap awal.',
+    serviceLabel: 'Layanan profesional',
+    service: 'Manajemen & konsultasi IT.',
+    serviceIntro: 'Mendampingi organisasi yang membutuhkan fondasi teknologi yang lebih jelas, terintegrasi, dan siap berkembang.',
+    serviceCta: 'Mari diskusikan',
     services: [
-      ['Konsultasi System Integrator', 'Penyusunan arsitektur sistem, audit infrastruktur IT legasi, dan strategi transformasi digital bagi perusahaan agrobisnis & manufaktur.', 'Mulai IDR 15jt / sesi'],
-      ['Advisory & Mentoring Startup', 'Pendampingan strategi scale-up produk, pembentukan struktur engineering, efisiensi cloud-cost, hingga persiapan pitch deck.', 'Skema bulanan retainer'],
-      ['Kemitraan Kebun & AgriTech', 'Peluang investasi pengembangan teknologi di kebun durian, riset bersama sensor lapangan, serta uji coba alat agritech.', 'Mulai IDR 250jt / kemitraan']
+      ['Konsultasi System Integrator', 'Pemetaan kebutuhan, integrasi sistem, dan rancangan arsitektur yang selaras dengan operasi bisnis.'],
+      ['IT Management & Infrastructure', 'Pendampingan pengelolaan teknologi, infrastruktur, keamanan, dan tata kelola IT.'],
+      ['Digital & Agritech Strategy', 'Menerjemahkan peluang bisnis menjadi langkah digital dan solusi agritech yang terukur.'],
     ],
-    contactLabel: 'Visi & filosofi', contact: '“Teknologi terbaik bukan teknologi yang paling rumit, tetapi yang paling berdampak langsung saat menyentuh akar kehidupan manusia.”', contactText: 'Terbuka untuk konsultasi system integrator, advisory dan mentoring startup, serta kemitraan kebun & agritech.', contactButton: 'Mari terhubung di LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
+    notesLabel: 'Blog',
+    notesTitle: 'Tulisan & pemikiran.',
+    notesIntro: 'Catatan tentang teknologi, kebun durian premium, dan perjalanan membangun agritech. Tulisan pertama akan segera hadir.',
+    notes: [
+      ['Teknologi & Sistem', 'Membangun sistem yang bekerja untuk manusia dan operasi nyata.'],
+      ['Durian Premium', 'Catatan dari kebun dan toko durian premium.'],
+      ['Agritech', 'Eksperimen, pembelajaran, dan masa depan pertanian berbasis data.'],
+    ],
+    contactLabel: 'Visi & Filosofi Octavia Denny Musa Irawan',
+    contact: '“Teknologi terbaik bukan teknologi yang paling rumit, tetapi yang paling berdampak langsung saat menyentuh akar kehidupan manusia.”',
+    contactText: 'Terbuka untuk percakapan tentang teknologi, integrasi sistem, durian premium, dan agritech.',
+    contactCta: 'Terhubung di LinkedIn',
+    footer: 'Profesional teknologi, petani durian premium, dan agritech builder.',
+    comingSoon: 'Segera hadir',
   },
   en: {
-    nav: { work: 'Expertise', experience: 'Initiatives', connect: 'Collaborate' },
-    heroEyebrow: 'Professional portfolio & agrotourism',
+    nav: { work: 'Expertise', experience: 'Journey', connect: 'Collaborate' },
+    heroEyebrow: 'Octavia Denny Musa Irawan',
     hero: '20+ Years in Technology.<br /><span>Now Building the Future of Agriculture.</span>',
-    lede: 'Combining deep experience in large-scale systems architecture and digital startup ecosystems to reimagine premium Indonesian durian cultivation through agritech.',
-    primary: 'Let’s talk', secondary: 'Explore initiatives',
+    lede: 'Technology professional, system integrator, premium durian farmer, and agritech builder connecting digital systems with real needs in the field.',
+    primary: 'Start a conversation',
+    secondary: 'See the journey',
     aboutLabel: 'About',
-    about: 'From Lines of Code to<br />Fertile Indonesian Soil.',
-    intro: 'Two decades have been spent designing information systems architecture, leading engineering teams, and navigating Indonesia’s technology startup landscape. That journey formed a deep understanding of how technology must solve real problems.<br /><br />The focus now turns to a foundational sector with immense potential: agriculture. Through modernising premium durian estates and building agritech ventures, the mission is to raise the value of Indonesian produce to a world-class level.',
-    values: [['20+', 'Years of startup & IT experience.'], ['3', 'Active business initiatives.'], ['50+ hectares', 'Integrated durian estate area.'], ['15+', 'Enterprise system architectures designed.']],
-    workLabel: 'Core expertise', work: 'Expertise & technology mastery.',
-    cases: [
-      ['System Integration', 'Connecting field IoT sensors, meteorological data, and warehouse logistics into one integrated analytics dashboard.'],
-      ['Startup Building & Scaling', 'Building digital business models, recruiting engineering teams, and preparing foundations that can grow.'],
-      ['IT Infrastructure', 'Resilient cloud architecture, edge computing for low-connectivity estates, and end-to-end supply-chain data security.']
+    about: 'From Lines of Code to<br />Indonesia’s Fertile Land.',
+    intro: 'Two decades have been spent designing information-system architecture, leading engineering teams, and navigating Indonesia’s technology startup landscape. That journey built a deep understanding that technology must solve real problems.<br /><br />Since 2021, that focus has also grown in a premium durian orchard in Solo, Central Java. Since 2023, the journey has continued through premium durian stores in Jakarta and BSD, while building agritech foundations relevant to Indonesian agriculture.',
+    values: [
+      ['20+', 'Years of experience in technology.'],
+      ['Since 2021', 'Premium durian farmer in Solo, Central Java.'],
+      ['Since 2023', 'Premium durian store owner in Jakarta & BSD.'],
+      ['Now', 'Building agritech solutions.'],
     ],
-    expLabel: 'Core business initiatives', exp: 'An active business collective.',
+    workLabel: 'Core expertise',
+    work: 'Technology expertise & mastery.',
+    workIntro: 'Connecting technology standards with business operations and field needs, so every system creates tangible impact.',
+    competencies: [
+      ['System Integration', 'Designing and connecting applications, data, infrastructure, and operating workflows into one focused system.'],
+      ['Startup Building & Scaling', 'Building product, team, and operational foundations that can grow alongside business needs.'],
+      ['IT Infrastructure', 'Resilient cloud architecture, edge computing for orchards with limited connectivity, and end-to-end supply-chain data security.'],
+      ['AgriTech Innovation', 'Applying digital technology to improve orchard management, field data, and decision-making.'],
+      ['Digital Transformation', 'Turning manual operations into integrated systems that are scalable, transparent, and easy to monitor in real time.'],
+      ['Product Strategy', 'Building product roadmaps focused on business value, user experience, and technical readiness for scale.'],
+    ],
+    expLabel: 'Journey',
+    exp: 'Technology, orchards, and agritech.',
     roles: [
-      ['Duren Signature', 'Premium Durian Store', 'Premium e-commerce', 'A premium durian distribution centre with produce curated using quality-sensor data.', 'West Java'],
-      ['Pratama Farms', 'Modern Durian Estate', 'Agrotourism & estate', 'A modern durian estate implementing IoT for irrigation, fertilisation, and early pest detection.', 'West Java'],
-      ['Tanisinergi', 'AgriTech Startup', 'Technology platform', 'Building a digital supply-chain platform that connects community estates with global premium markets.', 'Indonesia']
+      ['Since 2021', 'Premium Durian Farmer', 'Premium durian orchard', 'Growing premium durian with a measured operational approach in Solo, Central Java.', 'Solo, Central Java'],
+      ['Since 2023', 'Premium Durian Store Owner', 'Jakarta & BSD', 'Building a trusted premium durian buying experience for customers in Jakarta and BSD.', 'Jakarta & BSD'],
+      ['Technology professional', 'IT Manager & System Integrator', 'IT management and consulting', 'Managing IT needs and guiding organisations through architecture, infrastructure, and system integration.', 'Indonesia'],
+      ['Building now', 'Agritech Builder', 'Technology for agriculture', 'Developing a technology foundation that connects data, orchard processes, and agricultural business value.', 'Indonesia'],
     ],
-    serviceLabel: 'Professional services', serviceTitle: 'Collaboration & consulting.', serviceIntro: 'Opening a limited number of engagements to help traditional corporations transition to digital, and to mentor early-stage startup founders.',
+    serviceLabel: 'Professional services',
+    service: 'IT management & consulting.',
+    serviceIntro: 'Supporting organisations that need a clearer, integrated technology foundation ready to grow.',
+    serviceCta: 'Let’s discuss',
     services: [
-      ['System Integrator Consulting', 'Systems architecture, legacy IT infrastructure audits, and digital-transformation strategy for agribusiness and manufacturing companies.', 'From IDR 15m / session'],
-      ['Startup Advisory & Mentoring', 'Product scale-up strategy, engineering organisation design, cloud-cost efficiency, and pitch-deck preparation.', 'Monthly retainer model'],
-      ['Orchard & AgriTech Partnerships', 'Investment opportunities in durian-estate technology, collaborative field-sensor research, and agritech trials.', 'From IDR 250m / partnership']
+      ['System Integrator Consulting', 'Needs mapping, system integration, and architecture planning aligned with business operations.'],
+      ['IT Management & Infrastructure', 'Guidance for technology management, infrastructure, security, and IT governance.'],
+      ['Digital & Agritech Strategy', 'Turning business opportunities into measured digital steps and agritech solutions.'],
     ],
-    contactLabel: 'Vision & philosophy', contact: '“The best technology is not the most complex, but the one that makes the greatest impact when it touches the roots of people’s lives.”', contactText: 'Open to system-integrator consulting, startup advisory and mentoring, and orchard & agritech partnerships.', contactButton: 'Connect on LinkedIn', copyright: '© 2026 Denny Musa Irawan. Dennyspace.'
-  }
+    notesLabel: 'Blog',
+    notesTitle: 'Notes & thinking.',
+    notesIntro: 'Notes on technology, premium durian, and the journey of building agritech. The first articles are coming soon.',
+    notes: [
+      ['Technology & Systems', 'Building systems that serve people and real operations.'],
+      ['Premium Durian', 'Notes from the orchard and the premium durian store.'],
+      ['Agritech', 'Experiments, learning, and the future of data-driven agriculture.'],
+    ],
+    contactLabel: 'Octavia Denny Musa Irawan’s vision & philosophy',
+    contact: '“The best technology is not the most complex, but the one that creates the most direct impact when it touches the roots of human life.”',
+    contactText: 'Open to conversations about technology, system integration, premium durian, and agritech.',
+    contactCta: 'Connect on LinkedIn',
+    footer: 'Technology professional, premium durian farmer, and agritech builder.',
+    comingSoon: 'Coming soon',
+  },
 };
 
-const locale = document.documentElement.dataset.locale || 'id';
+const locale = document.documentElement.lang === 'en' ? 'en' : 'id';
 const t = copy[locale];
-const other = locale === 'id' ? 'en' : 'id';
 const linkedIn = 'https://www.linkedin.com/in/octaviadenny/';
+const arrow = '<span aria-hidden="true">→</span>';
+const card = (tag, className, content) => '<' + tag + ' class="' + className + '">' + content + '</' + tag + '>';
 
-const arrow = '<span class="arrow" aria-hidden="true">›</span>';
-const values = t.values.map(([number, text]) => `<article class="value"><div class="value-number">${number}</div><p>${text}</p></article>`).join('');
-const cards = t.cases.map(([title, text], i) => `<article class="case ${['one','two','three'][i]}"><small>0${i + 1}</small><h3>${title}</h3><p>${text}</p><div class="shapes" aria-hidden="true"><i></i><i></i><i></i></div></article>`).join('');
-const roles = t.roles.map(([time, title, org, description, place]) => `<article class="role"><time>${time}</time><div><h3>${title}</h3><p>${org} · ${description}</p></div><div class="role-location">${place}</div></article>`).join('');
-const services = t.services.map(([title, text, fee]) => `<article class="service-card"><h3>${title}</h3><p>${text}</p><strong>${fee}</strong></article>`).join('');
+const values = t.values.map(function (item) {
+  return card('article', 'value', '<strong>' + item[0] + '</strong><p>' + item[1] + '</p>');
+}).join('');
 
-document.querySelector('#app').innerHTML = `
-  <nav class="nav" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="Dennyspace home">denny<span class="brand-mark">space</span></a>
-    <div class="nav-links">
-      <a href="#focus">${t.nav.work}</a><a href="#journey">${t.nav.experience}</a><a href="#collaborate">${t.nav.connect}</a>
-      <a class="locale" href="/${other}/" aria-label="Switch to ${other === 'id' ? 'Bahasa Indonesia' : 'English'}"><span class="${locale === 'id' ? 'is-current' : ''}">ID</span><span class="${locale === 'en' ? 'is-current' : ''}">EN</span></a>
-    </div>
-  </nav>
-  <a class="mobile-locale" href="/${other}/" aria-label="Switch to ${other === 'id' ? 'Bahasa Indonesia' : 'English'}">${other.toUpperCase()}</a>
-  <section class="hero" id="top"><div class="orbit" aria-hidden="true"></div><div class="hero-inner">
-    <p class="eyebrow">${t.heroEyebrow}</p><h1>${t.hero}</h1><p class="lede">${t.lede}</p>
-    <div class="hero-actions"><a class="button" href="#connect">${t.primary} ${arrow}</a><a class="text-link" href="#journey">${t.secondary} ${arrow}</a></div>
-  </div></section>
-  <section class="section"><div class="section-inner"><p class="section-label">${t.aboutLabel}</p><h2>${t.about}</h2><p class="intro">${t.intro}</p><div class="values">${values}</div></div></section>
-  <section class="section work" id="focus"><div class="section-inner"><p class="section-label">${t.workLabel}</p><h2>${t.work}</h2><div class="work-grid">${cards}</div></div></section>
-  <section class="section experience" id="journey"><div class="section-inner"><p class="section-label">${t.expLabel}</p><h2>${t.exp}</h2><div class="timeline">${roles}</div></div></section>
-  <section class="section services" id="collaborate"><div class="section-inner"><p class="section-label">${t.serviceLabel}</p><h2>${t.serviceTitle}</h2><p class="intro">${t.serviceIntro}</p><div class="service-grid">${services}</div></div></section>
-  <section class="section contact" id="connect"><div class="contact-ring" aria-hidden="true"></div><div class="section-inner" style="position:relative"><p class="section-label">${t.contactLabel}</p><h2>${t.contact}</h2><p class="intro">${t.contactText}</p><a class="button" href="${linkedIn}" target="_blank" rel="noopener noreferrer">${t.contactButton} ${arrow}</a></div></section>
-  <footer class="footer"><div class="footer-inner"><span>${t.copyright}</span><a href="${linkedIn}" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></footer>`;
+const competencies = t.competencies.map(function (item, index) {
+  return card('article', 'competency-card', '<small>0' + (index + 1) + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p>');
+}).join('');
+
+const roles = t.roles.map(function (item) {
+  return card('article', 'timeline-item', '<div class="timeline-date">' + item[0] + '</div><div class="timeline-content"><h3>' + item[1] + '</h3><h4>' + item[2] + '</h4><p>' + item[3] + '</p><span>' + item[4] + '</span></div>');
+}).join('');
+
+const services = t.services.map(function (item) {
+  return card('article', 'service-card', '<h3>' + item[0] + '</h3><p>' + item[1] + '</p><strong>' + t.serviceCta + ' ' + arrow + '</strong>');
+}).join('');
+
+const notes = t.notes.map(function (item) {
+  return card('article', 'note-card', '<small>' + t.notesLabel + '</small><h3>' + item[0] + '</h3><p>' + item[1] + '</p><span>' + t.comingSoon + '</span>');
+}).join('');
+
+document.body.innerHTML = [
+  '<header class="site-header">',
+  '<a class="wordmark" href="./" aria-label="Dennyspace home">dennyspace<span>.</span></a>',
+  '<button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>',
+  '<nav aria-label="Primary navigation">',
+  '<a href="#work">' + t.nav.work + '</a>',
+  '<a href="#experience">' + t.nav.experience + '</a>',
+  '<a href="#connect">' + t.nav.connect + '</a>',
+  '<a class="language" href="../' + (locale === 'id' ? 'en' : 'id') + '/">' + (locale === 'id' ? 'EN' : 'ID') + '</a>',
+  '</nav></header>',
+  '<main>',
+  '<section class="hero section"><div class="hero-orbit" aria-hidden="true"></div><div class="hero-content reveal">',
+  '<p class="eyebrow">' + t.heroEyebrow + '</p><h1>' + t.hero + '</h1><p class="lede">' + t.lede + '</p>',
+  '<div class="hero-actions"><a class="button button-primary" href="#connect">' + t.primary + ' ' + arrow + '</a><a class="button button-quiet" href="#experience">' + t.secondary + '</a></div>',
+  '</div></section>',
+  '<section class="about section section-light" id="about"><div class="split-heading reveal"><p class="eyebrow">' + t.aboutLabel + '</p><h2>' + t.about + '</h2></div><div class="about-copy reveal"><p>' + t.intro + '</p></div><div class="values reveal">' + values + '</div></section>',
+  '<section class="work section" id="work"><div class="section-heading reveal"><p class="eyebrow">' + t.workLabel + '</p><h2>' + t.work + '</h2><p>' + t.workIntro + '</p></div><div class="competency-grid reveal">' + competencies + '</div></section>',
+  '<section class="experience section section-light" id="experience"><div class="section-heading reveal"><p class="eyebrow">' + t.expLabel + '</p><h2>' + t.exp + '</h2></div><div class="timeline reveal">' + roles + '</div></section>',
+  '<section class="services section"><div class="section-heading reveal"><p class="eyebrow">' + t.serviceLabel + '</p><h2>' + t.service + '</h2><p>' + t.serviceIntro + '</p></div><div class="service-grid reveal">' + services + '</div></section>',
+  '<section class="notes section section-light" id="notes"><div class="section-heading reveal"><p class="eyebrow">' + t.notesLabel + '</p><h2>' + t.notesTitle + '</h2><p>' + t.notesIntro + '</p></div><div class="notes-grid reveal">' + notes + '</div></section>',
+  '<section class="contact section" id="connect"><div class="contact-grid reveal"><div><p class="eyebrow">' + t.contactLabel + '</p><h2>' + t.contact + '</h2><p>' + t.contactText + '</p></div><a class="button button-primary" href="' + linkedIn + '" target="_blank" rel="noreferrer">' + t.contactCta + ' ' + arrow + '</a></div></section>',
+  '</main>',
+  '<footer><a class="wordmark" href="./">dennyspace<span>.</span></a><p>' + t.footer + '</p><p>© ' + new Date().getFullYear() + ' Octavia Denny Musa Irawan</p></footer>',
+].join('');
+
+const header = document.querySelector('.site-header');
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function () {
+  header.classList.toggle('scrolled', window.scrollY > 12);
+}, { passive: true });
+
+menuToggle.addEventListener('click', function () {
+  const isOpen = header.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+nav.addEventListener('click', function () {
+  header.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+});
+
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal').forEach(function (element) {
+  observer.observe(element);
+});
