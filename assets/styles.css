@@ -30,7 +30,6 @@ nav .language { border: 1px solid var(--line); border-radius: 999px; color: var(
 .section { padding: clamp(80px, 11vw, 150px) max(24px, calc((100vw - 1120px) / 2)); }
 .section-light { background: #fff; }
 .eyebrow { color: var(--blue); font-size: 15px; font-weight: 650; letter-spacing: -.02em; margin: 0 0 20px; }
-.eyebrow::before { content: "— "; }
 h1, h2, h3, h4, p { margin-top: 0; }
 h1 { font-size: clamp(54px, 7.7vw, 104px); letter-spacing: -.07em; line-height: .98; margin-bottom: 0; max-width: 980px; }
 h1 span { color: #86868b; }
