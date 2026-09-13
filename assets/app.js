@@ -12,7 +12,7 @@ const copy = {
     values: [
       ['20+', 'Tahun pengalaman di dunia teknologi.'],
       ['Sejak 2021', 'Petani durian premium di Solo, Jawa Tengah.'],
-      ['Sejak 2023', 'Pemilik toko durian premium di Jakarta & BSD.'],
+      ['Sejak 2023', 'Owner Durian Premium Store di Jakarta & BSD.'],
       ['Sekarang', 'Membangun solusi agritech.'],
     ],
     workLabel: 'Pilar kompetensi',
